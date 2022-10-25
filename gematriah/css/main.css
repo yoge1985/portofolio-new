@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: url("../img/numbers2.jpg") center/cover no-repeat;
+  color: white;
+  font-family: sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1.2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 150px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 53, 35, 0.95);
+}
+
+@media (max-width: 660px) {
+  .form {
+    padding: 30px;
+    text-align: center;
+  }
+}
+
+.form__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form__input {
+  font-size: 26px;
+  padding: 10px 20px;
+  color: black;
+  outline: 1px solid lightblue;
+  outline-offset: 2px;
+  margin-top: 10px;
+}
+
+@media (max-width: 440px) {
+  .form__input {
+    padding: 0;
+    width: 70%;
+    margin: auto;
+  }
+}
+
+.form__btn {
+  padding: 14px 25px;
+  width: 40%;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form__btn:hover {
+  background-color: #00b377;
+  color: white;
+}
+
+.btns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.result {
+  margin-top: 50px;
+  font-size: 28px;
+  color: aliceblue;
+  padding: 10px;
+  border-bottom: 2px solid #00b377;
+}
+
+.result__text {
+  font-size: 18px;
+}
+
+.result__number {
+  color: #00b377;
+  text-align: center;
+  margin: auto;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,209 @@
+.nav-links {
+  transition: all 0.2s;
+}
+
+.nav-links:hover {
+  transform: scale(1.15);
+}
+
+.heading {
+  text-transform: uppercase;
+  background-image: linear-gradient(to right bottom, #f87171, #818cf8, #34d399);
+  color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.heading-secondary:hover,
+.heading-tertiary:hover {
+  transform: skewY(10deg) skewX(10deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.heading-tertiary-link {
+  text-transform: none;
+}
+
+.heading-tertiary-link:hover {
+  transform: scale(1.2);
+  text-shadow: none;
+}
+
+.heading-secondary {
+  font-size: 40px;
+  display: inline-block;
+}
+
+.heading-tertiary {
+  display: inline-block;
+  font-size: 26px;
+}
+
+.heading-secondary-black {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.about-img {
+  height: 100%;
+  /* filter: opacity(0.9); */
+}
+
+.quotes-container {
+  height: 150px;
+}
+
+.quotes {
+  transition: all 1s;
+  font-size: 18px;
+}
+
+/* .composition {
+  position: relative;
+}
+
+.composition__photo {
+  width: 55%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  transition: all 0.2s;
+  z-index: 10;
+  outline-offset: 1rem;
+}
+
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+
+.composition__photo--p2 {
+  right: 0;
+  top: 2rem;
+}
+
+.composition__photo--p3 {
+  left: 15%;
+  top: 8rem;
+}
+
+.composition__photo:hover {
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+.composition__photo--p1:hover {
+  outline: 1rem solid #34d399;
+}
+.composition__photo--p2:hover {
+  outline: 1rem solid #f87171;
+}
+.composition__photo--p3:hover {
+  outline: 1rem solid #818cf8;
+} */
+
+.icon-circle {
+  background-image: linear-gradient(to right bottom, #f87171, #818cf8, #34d399);
+}
+
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.95);
+}
+
+.project-img {
+  transition: all 0.2s;
+  outline-offset: 1rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+}
+.project-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+}
+
+.project-img--1:hover {
+  outline: 1rem solid rgba(96, 165, 250, 0.7);
+}
+.project-img--2:hover {
+  outline: 1rem solid rgba(248, 113, 113, 0.7);
+  outline: 1rem solid rgba(52, 211, 153, 0.7);
+}
+
+.circle-img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+}
+
+.circle-img--1 {
+  background: url("../img/guessing-numbers.avif") center/cover no-repeat;
+}
+
+.circle-img--2 {
+  background: url("../img/to-do-list.avif") center/cover no-repeat;
+}
+
+.circle-img--3 {
+  background: url("../img/pong.jpeg") center/cover no-repeat;
+}
+
+.circle-img--4 {
+  background: url("../img/guessing-numbers.avif") center/cover no-repeat;
+}
+.circle-img--5 {
+  background: url("../img/pong.jpeg") left/cover no-repeat;
+}
+.circle-img--6 {
+  background: url("../img/contacts.jpeg") center/cover no-repeat;
+}
+.circle-img--7 {
+  background: url("../img/bookmark-flat.png") center/cover no-repeat;
+}
+.circle-img--8 {
+  background: url("../img/quotes.jpg") center/cover no-repeat;
+}
+
+.cta-btn,
+.cta-btn:visited {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s ease-out;
+  position: relative;
+  background-image: linear-gradient(to right bottom, #f87171, #818cf8, #34d399);
+  border: 1px solid white;
+  box-shadow: 0 0 23px white;
+}
+
+.cta-btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s ease-out;
+  background-image: linear-gradient(to right bottom, #f87171, #818cf8, #34d399);
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  /* box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); */
+  /* box-shadow: 0 0 33px white; */
+  box-shadow: 0 0 33px white;
+}
+
+.cta-btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.cta-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}

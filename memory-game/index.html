@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Simon Says</title>
+</head>
+<body>
+
+    <main class="section-main">
+        <header class="header">
+            <h2 class="header__command"></h2>
+            <i class="mute fas fa-volume-mute fa-volume-up"></i>
+        </header>
+
+        <div class="game-container row">
+            <div class="btn btn--game btn--1" id="1"></div>
+            <div class="btn btn--game btn--2" id="2"></div>
+            <div class="btn btn--game btn--3" id="3"></div>
+            <div class="btn btn--game btn--4" id="4"></div>
+            <button class="btn btn__main">Play</button>
+            <button class="btn btn__main game-over">
+                <span class="game-over__msg" id="message"></span>
+                <span class="game-over__replay-msg">replay</span>
+            </button>
+        </div>
+        
+        <section class="section-btns">
+
+            <div class="scores">
+                <span class="scores__name">Score:</span>
+                <span class="scores__number" id = "score">0</span>
+                <span class="scores__name">Your high score:</span>
+                <span class="scores__number" id="high-score"></span>
+            </div>
+
+            <div class="speed-btns">
+                <div class="speed-btns__text">Speed:</div>
+                <button class="btn btn--speed slow">slow</button>
+                <button class="btn btn--speed normal active">normal</button>
+                <button class="btn btn--speed fast">fast</button>
+            </div>
+        </section>
+
+        <audio class="sound" src="./mp3/simonsound1.mp3" type = "audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio class="sound" src="./mp3/simonsound2.mp3" type = "audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio class="sound" src="./mp3/simonsound3.mp3" type = "audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio class="sound" src="./mp3/simonsound4.mp3" type = "audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- WIN AND LOSE SOUND EFFECTS
+         -->
+
+        <audio class="sound-win" src="./mp3/win.mp3" type = "audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio class="sound-fail" src="./mp3/fail.mp3" type = "audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+    </main>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>

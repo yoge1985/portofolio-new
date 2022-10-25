@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main class="section-main">
+        <form class="form" action="#">
+
+            <h1 class="form__title">GEMATRIAH</h1>
+    
+            <label for="input">Type Hebrew Text Here</label>
+    
+            <input dir="rtl" lang="he" id="input" class="form__input" type="text">
+        
+            <div class="btns-container">
+                <input type="submit" class="form__btn" value="Calculate" id="btn">
+                <input class="form__btn reset" type="reset">
+            </div>
+
+            <div class="result">
+                <span class="result__text">Result:</span>
+                <span class="result__number" id="result"></soan>
+            </div>
+
+        </form>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

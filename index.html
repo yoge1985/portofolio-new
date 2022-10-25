@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Web developer | Joel Gefen is a skilled programmer, who's passionate and motivated to help others enjoy their dream website. Responsive design and excellent web performance!">
+        <link rel="shortcut icon" href="./assets/img/codeicon.ico" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/codeicon.ico" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Joel Gefen | Front-end Web Developer</title>
+        <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script defer src="./assets/js/script.js"></script>        
+        <script defer src="./assets/js/navbar.js"></script>
+    </head>
+    <body class="text-gray-800 antialiased">
+        <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+            <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+                <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+                    <!-- <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="mailto:kivicorn613@gmail.com" target="blank">Portfolio</a> -->
+                    <button
+                        class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                        type="button"
+                        onclick="toggleNavbar('example-collapse-navbar')"
+                    >
+                        <i class="text-white fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-collapse-navbar">
+                    <!-- <ul class="flex flex-col lg:flex-row list-none mr-auto">
+                        <li class="flex items-center">
+                            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing">
+                                <i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i> CV
+                            </a>
+                        </li>
+                    </ul> -->
+                    <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+                        <!-- <li class="flex items-center">
+                            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#pablo">
+                                <i class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg"></i><span class="lg:hidden inline-block ml-2">Share</span>
+                            </a>
+                        </li> -->
+                        
+                        <li class="flex items-center">
+                            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="mailto:jpgefen@gmail.com" target="blank">
+                                <i class="nav-links lg:text-gray-300 text-gray-500 fas fa-envelope text-lg leading-lg"style = "font-size: 22px;"></i><span class="lg:hidden inline-block ml-2">Email</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center">
+                            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://github.com/yoge1985" target="blank">
+                                <i class="nav-links lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg"style = "font-size: 22px;"></i><span class="lg:hidden inline-block ml-2">Github</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center">
+                            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://www.linkedin.com/in/joel-gefen-9798731a2/" target="blank">
+                                <i class="nav-links lg:text-gray-300 text-gray-500 fab fa-linkedin text-lg leading-lg mr-2" style = "font-size: 22px;"></i>
+                            </a>
+                        </li>
+                        <li class="flex items-center">
+                            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="/assets/cv/Kivi_Corn.pdf" target="blank">
+                                <i class="nav-links lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2" style = "font-size: 18px;"></i> CV
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 80vh;">
+                <div
+                    class="absolute top-0 w-full h-full bg-center bg-cover"
+                    style="background-image: url('./assets/img/bg-img\ 2.avif');"
+                >
+                    <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+                </div>
+                <div class="container relative mx-auto">
+                    <div class="items-center flex flex-wrap">
+                        <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                            <div class="pr-12">
+                                <h1 data-aos="fade-up" class="text-center text-white font-semibold text-5xl">
+                                    Hi, my name is Joel Gefen!
+                                </h1>
+                                <p data-aos="fade-right" data-aos-delay="1000" class="mt-4 text-3xl text-gray-300">
+                                    I'm a Front-end Web developer
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden" style="height: 70px; transform: translateZ(0px);">
+                    <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                        <polygon class="text-gray-200 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                    </svg>
+                </div>
+            </div>
+            <section class="pb-32 bg-gray-200 -mt-24">
+                <div class="container mx-auto px-4">
+                    <div class="flex flex-wrap">
+                        <div data-aos="fade-right" data-aos-delay="1200" class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                                <div class="px-4 py-5 flex-auto">
+                                    <div class="icon-circle text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <h6 class="text-xl font-semibold">Maintainable Code</h6>
+                                    <p class="mt-2 mb-4 text-gray-600">
+                                        I believe that the ability to write code that is easy to modify, reuse and extend is what makes a good developer.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="1400" class="w-full md:w-4/12 px-4 text-center">
+                            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                                <div class="px-4 py-5 flex-auto">
+                                    <div class="icon-circle text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <h6 class="text-xl font-semibold">Responsive Design</h6>
+                                    <p class="mt-2 mb-4 text-gray-600">
+                                        A fluid layout and an optimized experience for all devices is of my utmost importance. I have experience with both desktop first and mobile first applications.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-left" data-aos-delay="1600" class="pt-6 w-full md:w-4/12 px-4 text-center">
+                            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                                <div class="px-4 py-5 flex-auto">
+                                    <div class="icon-circle text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                    </div>
+                                    <h6 class="text-xl font-semibold">Web Performance</h6>
+                                    <p class="mt-2 mb-4 text-gray-600">
+                                        I enhance and optimize the website's performance, as this is the key to provide a positive experience for a user.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap mt-32 py-18" style="align-items: center;">
+                        <div data-aos="zoom-in-right" class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+                            <!-- <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+                                <i class="fas fa-user-friends text-xl"></i>
+                            </div> -->
+                            <h2 class="heading heading-secondary heading-secondary-black">
+                                About me
+                            </h2>
+                            <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                                <span class="heading heading-tertiary heading-tertiary-link" style="font-size: 20px; font-weight: 600;">HTML5</span>, 
+                                <span class="heading heading-tertiary heading-tertiary-link" style="font-size: 20px; font-weight: 600;">CSS3</span>,
+                                <span class="heading heading-tertiary heading-tertiary-link" style="font-size: 20px; font-weight: 600;">Sass</span>,
+                                <span class="heading heading-tertiary heading-tertiary-link" style="font-size: 20px; font-weight: 600;">JavaScript</span>, and
+                                are where I’ve spent the bulk of my time learning, but naturally I am always excited to learn new technologies!
+                            </p>
+                            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                                I am looking for a team that will allow, support & prompt me to perpetually leave my comfort zones & push my parameters.
+                            </p>
+                            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                                I am a passionate, motivated team player who always contributes positively, with a helpful attitude and a pleasing disposition.
+                            </p>
+                            <!-- <a href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation" class="font-bold text-gray-800 mt-8">Check Tailwind Starter Kit!</a> -->
+                        </div>
+                        <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+                            <div data-aos="flip-left" data-aos-delay="1000" class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg bg-grey-300">
+                                <div class="about-img">
+
+                                    <img
+                                        alt="..."
+                                        src="./assets/img/my profile pic.jpg"
+                                        class="w-full align-middle"
+                                    />
+                                </div>
+                                <blockquote class="quotes-container relative p-8 mb-4">
+                                    <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
+                                        <polygon points="-30,95 583,95 583,65" class="text-white fill-current"></polygon>
+                                    </svg>
+                                    <!-- <h4 class="text-xl font-bold">
+                                        Technical skills
+                                    </h4> -->
+                                    <p class="quotes text-md font-light mt-2"></p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="relative py-20">
+                <div class="heading">
+                    <h2 class="heading heading-secondary heading-secondary-black mb-24 text-gray-600">Projects</h2>
+                </div>
+                <div class="container mx-auto px-4">
+                    <div class="items-center flex flex-wrap">
+                        <div data-aos="flip-right" data-aos-delay="800" class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                            <a href="https://kriah.com" target="blank">
+                              <img
+                                alt="..."
+                                class="max-w-full rounded-sm project-img project-img--1"
+                                src="./assets/img/portfolio_website.png"/>  
+                            </a>
+                        </div>
+                        <div data-aos="zoom-in-left" class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                            <div class="md:pr-12">
+                                <!-- <div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+                                    <i class="fas fa-rocket text-xl"></i>
+                                </div> -->
+                                <h3 class="text-3xl font-semibold" style="display: inline;">Nutried website</h3>
+                                <a class="heading heading-tertiary heading-tertiary-link" href="https://kriah.com" target="blank">
+                                    <i class="fas fa-link" style="font-size: 20px; margin-left: 10px;"></i>
+                                </a>
+                                <a class="heading heading-tertiary heading-tertiary-link" href="https://github.com/yoge1985/nutriEd" target="blank">
+                                    <i class="fab fa-github" style="font-size: 20px; margin-left: 10px;"></i>
+                                </a>
+                                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                                    This beautiful and dynamic website allows you to book or enquire about nutrition consulations. The website also includes an updated nutrition blog.
+                                </p>
+                                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                                    This site was transformed from a static template website into a bespoke, dynamic website with a responsive design. It utilizes third party developer tools, such as being able to send emails to the client.
+                                </p>
+                                <ul class="list-none mt-6">
+                                    <li class="pr-10 pt-3
+                                     inline-block">
+                                        <div class="">
+                                            <div class = "text-center">
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-400"><i class="heading heading-tertiary heading-tertiary-link fab fa-html5"></i></span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">
+                                                    HTML5
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="pr-10 pt-3
+                                     inline-block">
+                                        <div class="">
+                                            <div class = "text-center">
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-400"><i class="heading heading-tertiary heading-tertiary-link fab fa-css3"></i></span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">CSS3</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="pr-10 pt-3
+                                     inline-block">
+                                        <div class="">
+                                            <div class = "text-center">
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-400"><i class="heading heading-tertiary heading-tertiary-link fab fa-js"></i></span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">JavaScript</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="pr-10 pt-3
+                                     inline-block">
+                                        <div class="text-center">
+                                            <div class = "-ml-16">
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-400"><i class="heading heading-tertiary heading-tertiary-link fab fa-php"></i></span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">Form Submit</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="items-center flex flex-wrap mt-32">
+                        <div data-aos="zoom-in-right" class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                            <div class="md:pr-12">
+                                <!-- <div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+                                    <i class="fas fa-rocket text-xl"></i>
+                                </div> -->
+                                <h3 class="text-3xl font-semibold" style="display: inline;">Natours website</h3>
+                                <a class="heading heading-tertiary heading-tertiary-link" href="https://kriah.com/hebrew-course/ycbm.html" target="blank">
+                                    <i class="fas fa-link" style="font-size: 20px; margin-left: 10px;"></i>
+                                </a>
+                                <a class="heading heading-tertiary heading-tertiary-link" href="https://github.com/KCode100/kriah__landing-page" target="blank">
+                                    <i class="fab fa-github" style="font-size: 20px; margin-left: 10px;"></i>
+                                </a>
+                                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                                    
+                                </p>
+                                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                                    This is a bespoke website for all your travel needs. There is a selection of different tours available, ranging from forest hikes to snow adventures.
+                                </p>
+                                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                                    This particular project makes use of modern CSS features and it's built with Sass for the finest maintainable and reusable code.
+                                </p>
+                                <ul class="list-none mt-6">
+                                    <li class="pr-10 pt-3
+                                     inline-block">
+                                        <div class="">
+                                            <div class = "text-center">
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-400"><i class="heading heading-tertiary heading-tertiary-link fab fa-html5"></i></span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">
+                                                    HTML5
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="pr-10 pt-3
+                                     inline-block">
+                                        <div class="">
+                                            <div class = "text-center">
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-400"><i class="heading heading-tertiary heading-tertiary-link fab fa-css3"></i></span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">CSS3</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="pr-10 pt-3
+                                     inline-block">
+                                        <div class="text-center">
+                                            <div class = "-ml-16">
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-400"><i class="heading heading-tertiary heading-tertiary-link fab fa-sass"></i></span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">Sass</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="pr-10 pt-3
+                                     inline-block">
+                                        <div class="">
+                                            <div class = "text-center">
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-400"><i class="heading heading-tertiary heading-tertiary-link fab fa-js"></i></span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">JavaScript</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-aos="flip-left"data-aos-delay="800" class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                            <a href="https://kriah.com/hebrew-course/ycbm.html" target="blank">
+                              <img
+                                alt="..."
+                                class="max-w-full rounded-sm project-img project-img--1"
+                                src="./assets/img/natours screenshot.png"/>  
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- <section class="relative py-20">
+                <div class="container mx-auto px-4">
+                    <div class="items-center flex flex-wrap">
+                        <div class="w-full md:w-6/12 ml-auto mr-auto px-4">
+                            <a href="https://kriah.com" target="blank">
+                              <img
+                                alt="..."
+                                class="max-w-full rounded-sm shadow-sm"
+                                src="./assets/img/natours.jpeg"/>  
+                            </a>
+                        </div>
+                        <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                            <div class="md:pr-12">
+                                
+                                <h3 class="text-3xl font-semibold">Personal Projects</h3>
+                                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                                    A collection of personal projects using JavaScript, React.js and Sass, including pong game, paint, trello, wedding countdown.
+                                </p>
+                                <ul class="list-none mt-6">
+                                    <li class="px-5 inline-block">
+                                        <div class="text-center">
+                                            <div class = "-ml-16">
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-500 "><i class="fab fa-sass"></i></span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">Sass</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="px-5 inline-block">
+                                        <div class="">
+                                            <div class = "text-center">
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-500"><i class="fab fa-js"></i></span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">JavaScript</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="px-5 inline-block">
+                                        <div class="">
+                                            <div class = "text-center">
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-500"><i class="fab fa-react"></i></span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">React.js</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            
+            <section class="pt-20 pb-48">
+                <div class="container mx-auto px-4">
+                    <div class="flex flex-wrap justify-center text-center mb-24">
+                        <div class="w-full lg:w-6/12 px-4">
+                            <h2 class="text-4xl font-semibold">App and Game Development</h2>
+                            <p class="text-lg leading-relaxed m-4 text-gray-600">
+                                A collection of personal projects which I created with JavaScript and React.js 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap">
+                        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                            <div class="px-6">
+                                <div class="circle-img circle-img--1" data-aos="fade-in"></div>
+                                <div class="pt-6 text-center">
+                                    <h5 class="text-xl font-bold">Guess number game</h5>
+                                    <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                                        JavaScript
+                                    </p>
+                                    <div class="mt-6">
+                                        <a class="heading heading-tertiary heading-tertiary-link" href="../memory-game/" target="blank">
+                                            <i class="fas fa-link" style="font-size: 26px;"></i>
+                                        </a>
+                                        <a class="heading heading-tertiary heading-tertiary-link" href="https://github.com/KCode100/simon-says" target="blank">
+                                            <i class="fab fa-github" style="font-size: 26px; margin-left: 15px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                            <div class="px-6">
+                                <div class="circle-img circle-img--2" data-aos="fade-in" data-aos-delay="400"></div>
+                                <div class="pt-6 text-center">
+                                    <h5 class="text-xl font-bold">To-do List</h5>
+                                    <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                                        JavaScript
+                                    </p>
+                                    <div class="mt-6">
+                                        <a class="heading heading-tertiary heading-tertiary-link" href="../wedding-countdown/" target="blank" title="view project">
+                                            <i class="fas fa-link" style="font-size: 26px;"></i>
+                                        </a>
+                                        <a class="heading heading-tertiary heading-tertiary-link" href="https://github.com/KCode100/Wedding-Countdown" title="view source code" target="blank">
+                                            <i class="fab fa-github" style="font-size: 26px; margin-left: 15px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                            <div class="px-6">
+                                <div class="circle-img circle-img--3"data-aos="fade-in" data-aos-delay="600"></div>
+                                <div class="pt-6 text-center">
+                                    <h5 class="text-xl font-bold">Pong game</h5>
+                                    <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                                        JavaScript
+                                    </p>
+                                    <div class="mt-6">
+                                        <a class="heading heading-tertiary heading-tertiary-link" href="../lorem-ipsum-generator/" target="blank">
+                                            <i class="fas fa-link" style="font-size: 26px;"></i>
+                                        </a>
+                                        <a class="heading heading-tertiary heading-tertiary-link" href="https://github.com/KCode100/lorem-ipsum-generator" target="blank">
+                                            <i class="fab fa-github" style="font-size: 26px; margin-left: 15px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                            <div class="px-6">
+                                <div class="circle-img circle-img--4" data-aos="fade-in" data-aos-delay="800"></div>
+                                <div class="pt-6 text-center">
+                                    <h5 class="text-xl font-bold">blank</h5>
+                                    <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                                        JavaScript
+                                    </p>
+                                    <div class="mt-6">
+                                        <a class="heading heading-tertiary heading-tertiary-link" href="../gematriah/" target="blank">
+                                            <i class="fas fa-link" style="font-size: 26px;"></i>
+                                        </a>
+                                        <a class="heading heading-tertiary heading-tertiary-link" href="https://github.com/KCode100/gematriah" target="blank">
+                                            <i class="fab fa-github" style="font-size: 26px; margin-left: 15px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+            </div>
+            </section>
+            <section class="pb-20 relative block bg-gray-900">
+                <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0px);">
+                    <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                        <polygon class="text-gray-900 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                    </svg>
+                </div>
+                <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+                    <div class="flex flex-wrap text-center justify-center">
+                        <div class="w-full lg:w-6/12 px-4">
+                            <h2 class="text-4xl font-semibold text-white">Let's get in touch!</h2>
+                            <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+                                Looking forward to hearing from you...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap mt-12 justify-center">
+                        <div data-aos="fade-in" data-aos-delay="600" class="w-full lg:w-3/12 px-4 text-center">
+                            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                                <i class="fas fa-medal text-xl"></i>
+                            </div>
+                            <h6 class="text-xl mt-5 font-semibold text-white">
+                                Passionate
+                            </h6>
+                            <p class="mt-2 mb-4 text-gray-500">
+                                I love the work I do and I'm motivated to help others enjoy their dream website.
+                            </p>
+                        </div>
+                        <div data-aos="fade-in" data-aos-delay="400" class="w-full lg:w-3/12 px-4 text-center">
+                            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                                <i class="fas fa-handshake text-xl"></i>
+                            </div>
+                            <h5 class="text-xl mt-5 font-semibold text-white">
+                                Team player
+                            </h5>
+                            <p class="mt-2 mb-4 text-gray-500">
+                                I'm an easygoing, flexible member of a team with experience in collaboration through Git and GitHub.
+                            </p>
+                        </div>
+                        <div data-aos="fade-in" class="w-full lg:w-3/12 px-4 text-center">
+                            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                                <i class="fas fa-lightbulb text-xl"></i>
+                            </div>
+                            <h5 class="text-xl mt-5 font-semibold text-white">Eager to learn</h5>
+                            <p class="mt-2 mb-4 text-gray-500">
+                                I'm constantly upgrading my skill set and eager to broaden my knowledge of software development
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="relative block py-24 lg:pt-0 bg-gray-900">
+                <div class="container mx-auto px-4">
+                    <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+                        <!-- <div class="w-full lg:w-6/12 px-4"> -->
+                            <!-- <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-900"> -->
+                                <!-- <div class="cta-containerflex-auto p-5 lg:p-10"> -->
+                                    <!-- <h4 class="text-2xl font-semibold">Want to work with us?</h4>
+                                    <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+                                        Complete this form and we will get back to you in 24 hours.
+                                    </p>
+                                    <div class="relative w-full mb-3 mt-8">
+                                        <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">Full Name</label>
+                                        <input
+                                            type="text"
+                                            class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                            placeholder="Full Name"
+                                            style="transition: all 0.15s ease 0s;"
+                                        />
+                                    </div>
+                                    <div class="relative w-full mb-3">
+                                        <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Email</label>
+                                        <input
+                                            type="email"
+                                            class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                            placeholder="Email"
+                                            style="transition: all 0.15s ease 0s;"
+                                        />
+                                    </div>
+                                    <div class="relative w-full mb-3">
+                                        <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">Message</label>
+                                        <textarea
+                                            rows="4"
+                                            cols="80"
+                                            class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                            placeholder="Type a message..."
+                                        ></textarea>
+                                    </div> -->
+                                    <!-- <div data-aos="fade-in" class="text-center mt-6"> -->
+                                        <div data-aos="fade-in">
+                                           <a
+                                            href="mailto:developer@bykivi.com"
+                                            target="blank"
+                                            class="cta-btn bg-gray-300 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                                        >
+                                            Send Message
+                                        </a> 
+                                        </div>
+                                        
+                                    <!-- </div> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- <footer class="relative bg-gray-200 pt-16 pb-6">
+            <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-200 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap">
+                    <div class="w-full lg:w-6/12 px-4">
+                        <h4 class="text-3xl font-semibold">Let's get in touch!</h4>
+                        <h5 class="text-lg mt-0 mb-2 text-gray-700">
+                            Find me on any of these platforms, we respond 1-2 business days.
+                        </h5>
+                        <div class="mt-6">
+                            <button class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
+                                <i class="flex fab fa-twitter"></i>
+                            </button>
+                            <button class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
+                                <i class="flex fab fa-facebook-square"></i>
+                            </button>
+                            <button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
+                                <i class="flex fab fa-dribbble"></i>
+                            </button>
+                            <button class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
+                                <i class="flex fab fa-github"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-6/12 px-4">
+                        <div class="flex flex-wrap items-top mb-6">
+                            <div class="w-full lg:w-4/12 px-4 ml-auto">
+                                <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://www.github.com/creativetimofficial">Github</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free">Free Products</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4">
+                                <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other Resources</span>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md">MIT License</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms">Terms &amp; Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-6 border-gray-400" /> -->
+                <!-- <div class="flex flex-wrap items-center md:justify-between justify-center">
+                    <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                        <div class="text-sm text-gray-600 font-semibold py-1">
+                            Copyright © 2019 Tailwind Starter Kit by
+                            <a href="https://www.creative-tim.com" class="text-gray-600 hover:text-gray-900">Creative Tim</a>.
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </footer>
+    </body>    
+</html>
