@@ -49,6 +49,13 @@
   /* filter: opacity(0.9); */
 }
 
+@media (max-width: 1300px) {
+  .project_example {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .quotes-container {
   height: 150px;
 }
@@ -296,4 +303,19 @@ input[type='submit'] {
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+
+@media (max-width: 1300px) {
+  .project_screenshot {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 75%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .project_txt {
+    text-align: center;
+    width: 80%;
+  }
 }
